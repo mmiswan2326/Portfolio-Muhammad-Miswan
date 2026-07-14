@@ -187,12 +187,14 @@ export function Contact() {
           <div className="flex flex-col gap-3.5">
             {socialLinks.map((link) => {
               const Icon = icons[link.icon];
+              const isExternalLink = /^https?:\/\//.test(link.href);
+
               return (
                 <a
                   key={link.label}
                   href={link.href}
-                  target={link.href.startsWith("http") ? "_blank" : undefined}
-                  rel="noreferrer"
+                  target={isExternalLink ? "_blank" : undefined}
+                  rel={isExternalLink ? "noopener noreferrer" : undefined}
                   className="group relative flex items-center justify-between overflow-hidden rounded-2xl border border-border bg-card/60 px-5 py-5 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-white/[0.16] hover:bg-card"
                 >
                   <div

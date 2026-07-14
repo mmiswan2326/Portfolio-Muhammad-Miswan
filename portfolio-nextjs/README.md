@@ -30,6 +30,10 @@ You almost never need to touch component code. Everything content-related lives 
 
 Add a new project by adding an object to the array in `data/projects.ts` — it will automatically show up in the grid and respect the filter tabs based on its `categories`.
 
+### Hero badge and image
+
+The hero card now uses a real profile image at `/public/avatar.jpg`, with a subtle grey-white border and blurred shadow pulse effect. This makes the avatar look polished and stable, while preserving motion in the glowing shadow rather than rotating the card itself.
+
 ### Swap in your real photo
 
 Drop an image into `/public` (e.g. `public/avatar.jpg`), then in

@@ -43,6 +43,10 @@ const config: Config = {
           "0%, 100%": { transform: "translate(0,0) scale(1)" },
           "50%": { transform: "translate(40px,-30px) scale(1.08)" },
         },
+        shadowZoom: {
+          "0%, 100%": { boxShadow: "0 30px 80px -40px rgba(255,255,255,0.12)" },
+          "50%": { boxShadow: "0 40px 100px -20px rgba(255,255,255,0.18)" },
+        },
         spin360: {
           to: { transform: "rotate(360deg)" },
         },
@@ -55,6 +59,7 @@ const config: Config = {
         pulseGlow: "pulseGlow 2s ease-in-out infinite",
         floaty: "floaty 5s ease-in-out infinite",
         drift: "drift 22s ease-in-out infinite",
+        shadowZoom: "shadowZoom 6s ease-in-out infinite",
         spin360: "spin360 6s linear infinite",
         shine: "shine 1.1s ease forwards",
       },

@@ -2,13 +2,13 @@ import { hackathons } from "@/data/hackathons";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { cn } from "@/lib/utils";
 
-export function Hackathons() {
+export function Achievements() {
   return (
-    <section id="hackathons" className="relative z-10 py-24 md:py-32">
+    <section id="achievements" className="relative z-10 py-24 md:py-32">
       <div className="mx-auto max-w-[1180px] px-8">
         <SectionHeading
-          eyebrow="Competitions"
-          title="Hackathons & Achievements"
+          eyebrow="Achievements"
+          title="Achievements"
           subtitle="Building fast, under pressure, in a room full of people doing the same thing."
         />
         <div className="grid grid-cols-1 gap-4.5 sm:grid-cols-2 lg:grid-cols-3">

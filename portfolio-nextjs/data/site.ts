@@ -1,9 +1,9 @@
 // Edit this file to update your name, role, and hero copy.
 export const site = {
   name: "Muhammad Miswan",
-  logoText: "miswan.dev",
-  roles: ["AI Engineer", "Machine Learning", "Full-Stack Developer"],
-  statusChip: "Open to AI Engineering roles",
+  logoText: "Muhammad Miswan",
+  roles: ["Data Scientist", "Machine Learning", "AI Engineer"],
+  statusChip: "Seeking new opportunities to learn and grow",
   heroTag:
     "I turn messy data and rough ideas into products people can actually use — from trained models to the interfaces around them.",
   resumeUrl: "/resume.pdf", // put your resume file in the /public folder
@@ -24,7 +24,7 @@ export const site = {
     { href: "#skills", label: "Skills" },
     { href: "#projects", label: "Projects" },
     { href: "#experience", label: "Experience" },
-    { href: "#hackathons", label: "Hackathons" },
+    { href: "#achievements", label: "Achievements" },
     { href: "#contact", label: "Contact" },
   ],
 };

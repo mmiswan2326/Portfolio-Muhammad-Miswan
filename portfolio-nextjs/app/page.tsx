@@ -5,7 +5,7 @@ import { Projects } from "@/components/sections/Projects";
 import { Experience } from "@/components/sections/Experience";
 import { Education } from "@/components/sections/Education";
 import { Certifications } from "@/components/sections/Certifications";
-import { Hackathons } from "@/components/sections/Hackathons";
+import { Achievements } from "@/components/sections/Hackathons";
 import { GithubStats } from "@/components/sections/GithubStats";
 import { Contact } from "@/components/sections/Contact";
 
@@ -19,7 +19,7 @@ export default function Home() {
       <Experience />
       <Education />
       <Certifications />
-      <Hackathons />
+      <Achievements />
       <GithubStats />
       <Contact />
     </main>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { site } from "@/data/site";
 import { LinkButton } from "@/components/ui/Button";
@@ -77,12 +78,17 @@ export function Hero() {
         </div>
 
         <div className="relative hidden h-[440px] items-center justify-center md:flex">
-          <div className="relative h-[340px] w-[280px] animate-spin360 rounded-[28px] bg-[conic-gradient(from_0deg,theme(colors.primary),theme(colors.accent),theme(colors.secondary),theme(colors.primary))] p-[2px]">
-            <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-[26px] bg-card font-mono text-[70px] font-semibold text-faint [animation:none]">
-              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(255,107,0,0.35),transparent_60%)]" />
-              <span className="relative -rotate-0 [animation:spin360_6s_linear_infinite_reverse]">
-                {site.avatarInitials}
-              </span>
+          <div className="relative h-[340px] w-[280px] rounded-[28px] border border-white/15 bg-white/5 p-[2px] shadow-[0_30px_80px_-40px_rgba(255,255,255,0.12)] backdrop-blur-xl animate-shadowZoom">
+            <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-[26px] bg-card/80 backdrop-blur-sm font-mono text-[70px] font-semibold text-faint">
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(255,255,255,0.12),transparent_60%)]" />
+              <div className="relative h-full w-full overflow-hidden rounded-[26px]">
+                <Image
+                  src="/avatar.jpg"
+                  alt="Profile avatar"
+                  fill
+                  className="h-full w-full object-cover"
+                />
+              </div>
             </div>
           </div>
           {floatChips.map((chip) => (
