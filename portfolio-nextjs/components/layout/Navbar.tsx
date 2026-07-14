@@ -44,7 +44,7 @@ export function Navbar() {
           </nav>
           <a
             href="#contact"
-            className="whitespace-nowrap rounded-full bg-gradient-to-br from-primary to-secondary px-4.5 py-2 font-mono text-[12.5px] font-medium text-white transition-shadow hover:shadow-[0_6px_20px_-6px_rgba(255,107,0,0.6)]"
+            className="whitespace-nowrap rounded-full bg-gradient-to-br from-primary/95 to-secondary/90 px-4.5 py-2 font-mono text-[12.5px] font-medium text-white transition-shadow hover:shadow-[0_6px_20px_-6px_rgba(127,182,133,0.45)]"
           >
             Let&apos;s talk
           </a>

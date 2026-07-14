@@ -58,9 +58,9 @@ export function Contact() {
 
   return (
     <section id="contact" className="relative z-10 py-28 md:py-40">
-      {/* localized enhancement of the existing orange glow — soft, layered, vignetted */}
+      {/* localized soft green vignette for mood without heavy glow */}
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute left-1/2 top-0 h-[420px] w-[820px] -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(255,107,0,0.14),transparent_70%)] blur-2xl" />
+        <div className="absolute left-1/2 top-0 h-[420px] w-[820px] -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(127,182,133,0.12),transparent_70%)] blur-2xl" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_50%,transparent_40%,rgba(11,11,15,0.5)_100%)]" />
       </div>
 
@@ -132,8 +132,8 @@ export function Contact() {
               disabled={status === "loading"}
               className={cn(
                 "group relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-xl px-6 py-3.5 text-sm font-semibold text-white transition-[box-shadow,transform] duration-300 will-change-transform",
-                "bg-gradient-to-br from-primary via-secondary to-primary bg-[length:200%_auto] bg-left hover:bg-right",
-                "shadow-[0_8px_28px_-8px_rgba(255,107,0,0.55)] hover:shadow-[0_16px_40px_-10px_rgba(255,107,0,0.75)]",
+                "bg-gradient-to-br from-primary/95 via-secondary/85 to-primary/95 bg-[length:200%_auto] bg-left hover:bg-right",
+                "shadow-[0_8px_28px_-8px_rgba(127,182,133,0.4)] hover:shadow-[0_16px_40px_-10px_rgba(127,182,133,0.55)]",
                 "disabled:cursor-not-allowed disabled:opacity-80",
                 status === "success" && "from-success via-success to-success shadow-[0_8px_28px_-8px_rgba(34,197,94,0.5)]",
                 status === "error" && "from-red-500 via-red-500 to-red-500 shadow-[0_8px_28px_-8px_rgba(239,68,68,0.5)]"
@@ -200,7 +200,7 @@ export function Contact() {
                   <div
                     className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                     style={{
-                      background: "radial-gradient(220px circle at 15% 50%, rgba(255,138,61,0.12), transparent 70%)",
+                      background: "radial-gradient(220px circle at 15% 50%, rgba(52,211,153,0.12), transparent 70%)",
                     }}
                   />
                   <div className="relative z-10 flex items-center gap-4">
@@ -238,7 +238,7 @@ export function Contact() {
 }
 
 const inputClass =
-  "w-full rounded-xl border border-border bg-surface/70 px-4 py-3.5 text-[14.5px] text-white placeholder:text-faint outline-none transition-[border-color,box-shadow] duration-[250ms] focus:border-primary focus:shadow-[0_0_0_4px_rgba(255,107,0,0.12)] disabled:opacity-60";
+  "w-full rounded-xl border border-border bg-surface/70 px-4 py-3.5 text-[14.5px] text-white placeholder:text-faint outline-none transition-[border-color,box-shadow] duration-[250ms] focus:border-primary focus:shadow-[0_0_0_4px_rgba(52,211,153,0.12)] disabled:opacity-60";
 
 function Field({
   label,

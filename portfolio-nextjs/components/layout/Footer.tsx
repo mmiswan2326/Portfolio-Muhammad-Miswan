@@ -28,7 +28,7 @@ export function Footer() {
         })}
       </div>
       <p className="font-mono text-[13px] text-faint">
-        Made with <span className="text-rose-500">♥</span> by {site.name} · © {new Date().getFullYear()}
+        Made with <span className="text-emerald-400">♥</span> by {site.name} · © {new Date().getFullYear()}
       </p>
     </footer>
   );

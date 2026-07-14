@@ -33,7 +33,7 @@ export function Tile({ children, className, span = 1 }: TileProps) {
         className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
         style={{
           background:
-            "radial-gradient(320px circle at var(--mx,50%) var(--my,50%), rgba(255,138,61,0.12), transparent 60%)",
+            "radial-gradient(320px circle at var(--mx,50%) var(--my,50%), rgba(127,182,133,0.12), transparent 60%)",
         }}
       />
       <div className="relative z-10">{children}</div>

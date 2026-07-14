@@ -12,7 +12,7 @@ export function Certifications() {
               key={cert.title}
               className="rounded-2xl border border-border bg-card p-5.5 transition-transform duration-300 hover:-translate-y-1.5 hover:border-borderHover"
             >
-              <div className="mb-4 flex h-9.5 w-9.5 items-center justify-center rounded-[10px] bg-gradient-to-br from-primary to-secondary font-mono text-sm font-bold">
+              <div className="mb-4 flex h-9.5 w-9.5 items-center justify-center rounded-[10px] bg-primary/15 text-primary font-mono text-sm font-bold">
                 {cert.short}
               </div>
               <h4 className="mb-1.5 text-[15px] font-bold">{cert.title}</h4>

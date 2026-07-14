@@ -16,7 +16,7 @@ export function Skills() {
           {skills.map((cat) => (
             <Tile key={cat.title} span={cat.span} className="group">
               <h3 className="mb-4 flex items-center gap-2.5 text-base font-bold">
-                <span className="h-2 w-2 rounded-[3px] bg-gradient-to-br from-primary to-accent" />
+                <span className="h-2 w-2 rounded-[3px] bg-primary" />
                 {cat.title}
               </h3>
               <div className="flex flex-wrap gap-2">

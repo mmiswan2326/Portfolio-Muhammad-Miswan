@@ -19,7 +19,7 @@ export function Education() {
               transition={{ duration: 0.5, delay: i * 0.1, ease: [0.2, 0.7, 0.3, 1] }}
               className="relative pb-11 last:pb-0"
             >
-              <div className="absolute -left-[39.5px] top-1 h-2.5 w-2.5 rounded-full border-2 border-primary bg-bg shadow-[0_0_0_4px_rgba(255,107,0,0.14)]" />
+              <div className="absolute -left-[39.5px] top-1 h-2.5 w-2.5 rounded-full border-2 border-primary bg-bg shadow-[0_0_0_4px_rgba(52,211,153,0.14)]" />
               <span className="mb-2 block font-mono text-xs text-accent">{item.date}</span>
               <h3 className="text-[17px] font-bold">{item.degree}</h3>
               <div className="mb-2.5 mt-1 text-[13.5px] font-medium text-dim">{item.school}</div>

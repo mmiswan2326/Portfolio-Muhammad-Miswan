@@ -30,12 +30,12 @@ function ProjectCard({ project }: { project: (typeof projects)[number] }) {
         className="pointer-events-none absolute inset-0 z-10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
         style={{
           background:
-            "radial-gradient(300px circle at var(--mx,50%) var(--my,50%), rgba(255,138,61,0.14), transparent 60%)",
+            "radial-gradient(300px circle at var(--mx,50%) var(--my,50%), rgba(127,182,133,0.12), transparent 60%)",
         }}
       />
       <div
         className={cn(
-          "relative flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary/25 to-accent/10",
+          "relative flex items-center justify-center overflow-hidden bg-primary/10",
           project.span === 2 ? "h-[230px]" : "h-[170px]"
         )}
       >
